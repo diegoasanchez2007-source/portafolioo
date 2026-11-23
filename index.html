@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Educa</title>
+    <meta name="description" content="Descubre recursos y actividades para aprender con tecnología y apoyar una educación de calidad.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>🌎 MUNDO EDUCA</h1>
+    <nav aria-label="Navegación principal">
+         <a href="#inicio">Inicio</a>
+         <a href="#problema">Problema</a>
+        <a href="#solucion">Solución</a>
+        <a href="#beneficios">Beneficios</a>
+         <a href="#tecnologias">Tecnologías</a>
+         <a href="#recursos">Recursos</a>
+         <a href="#actividad">Actividad</a>
+    </nav>
+  </header>
+
+<main>
+     <section id="inicio" class="inicio">
+        <h2>El conocimiento transforma el futuro</h2>
+        <p>Aprende, descubre y desarrolla nuevas habilidades con ayuda de la tecnología.</p>
+         <a class="boton" href="#actividad">Comienza a aprender</a>
+         <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" alt="Estudiantes aprendiendo en un salón">
+     </section>
+
+    <section id="problema" class="bloque">
+         <h2>📚 El problema</h2>
+         <p>Muchos estudiantes tienen dificultades para acceder a recursos educativos y herramientas digitales que faciliten su aprendizaje.</p>
+    </section>
+
+    <section id="solucion" class="bloque fondo-claro">
+         <h2>💡 Nuestra solución tecnológica</h2>
+         <p>Mundo Educa es una plataforma digital que ofrece información, recursos educativos y actividades interactivas para mejorar el aprendizaje.</p>
+        <p>La idea apoya el ODS 4, que busca una educación inclusiva y de calidad para todas las personas.</p>
+         <p>Mundo Educa está dirigida a estudiantes que necesitan más recursos para aprender. Mediante internet y herramientas digitales, ofrece materiales y actividades que pueden consultar desde distintos lugares.</p>
+     </section>
+
+     <section id="beneficios" class="bloque">
+         <h2>⭐ Beneficios</h2>
+         <ul>
+              <li>Acceso a recursos educativos.</li>
+             <li>Aprendizaje interactivo.</li>
+             <li>Desarrollo de habilidades digitales.</li>
+              <li>Educación ambiental.</li>
+          </ul>
+    </section>
+
+        <section id="tecnologias" class="bloque fondo-claro">
+        <h2>💻 Tecnologías utilizadas</h2>
+         <ul>
+            <li><strong>Internet:</strong> permite acceder a una amplia gama de recursos educativos y plataformas de aprendizaje.</li>
+             <li><strong>Tablets y computadoras:</strong> permiten acceder a libros digitales, actividades y plataformas educativas.</li>
+             <li><strong>Realidad virtual:</strong> permite explorar lugares, experimentar y aprender mediante entornos virtuales.</li>
+             <li><strong>Pizarras digitales:</strong> facilitan las explicaciones y actividades interactivas en clase.</li>
+             <li><strong>Plataformas de aprendizaje virtual:</strong> ofrecen cursos, videos, ejercicios y materiales educativos desde cualquier lugar.</li>
+            </ul>
+     </section>
+
+     <section id="recursos" class="bloque">
+          <h2>📖 Recursos educativos</h2>
+        <p>Explora diferentes áreas del conocimiento y fortalece tus habilidades.</p>
+
+         <div class="recursos">
+            <div class="recurso">
+         <h3>🔢 Matemáticas</h3>
+        <p>Aprende sobre operaciones, números, geometría y resolución de problemas.</p>
+         </div>
+
+     <div class="recurso">
+     <h3>🔬 Ciencias</h3>
+     <p>Descubre el mundo natural, el medio ambiente y los avances científicos.</p>
+         </div>
+
+     <div class="recurso">
+     <h3>💻 Tecnología</h3>
+     <p>Conoce herramientas digitales y desarrolla habilidades tecnológicas.</p>
+     </div>
+     </div>
+     </section>
+
+        <section id="actividad">
+        <h2>🧠 Pon a prueba tus conocimientos</h2>
+        <p>Responde estas preguntas sobre educación y tecnología.</p>
+         <fieldset class="pregunta">
+        <legend>1. ¿Qué significa educación de calidad?</legend>
+        <label><input type="radio" name="pregunta1" value="incorrecta"> Energía asequible y no contaminante</label>
+        <label><input type="radio" name="pregunta1" value="correcta"> Educación que permite adquirir conocimientos y habilidades para el desarrollo personal y profesional</label>
+         <label><input type="radio" name="pregunta1" value="incorrecta"> Acción por el clima</label>
+         </fieldset>
+
+     <fieldset class="pregunta">
+         <legend>2. ¿Qué herramienta facilita el aprendizaje digital?</legend>
+         <label><input type="radio" name="pregunta2" value="correcta"> Una plataforma educativa que ofrece herramientas para aprender de manera interactiva</label>
+         <label><input type="radio" name="pregunta2" value="incorrecta"> Un videojuego que no tenga relación con la educación</label>
+         <label><input type="radio" name="pregunta2" value="incorrecta"> El uso de internet para desinformarse</label>
+            </fieldset>
+
+    <fieldset class="pregunta">
+         <legend>3. ¿Por qué es importante la educación?</legend>
+        <label><input type="radio" name="pregunta3" value="incorrecta"> Porque impide desarrollar habilidades</label>
+         <label><input type="radio" name="pregunta3" value="correcta"> Porque permite adquirir conocimientos y habilidades que nos ayudan a tener un mejor futuro</label>
+         <label><input type="radio" name="pregunta3" value="incorrecta"> Porque no nos permite desarrollarnos como personas</label>
+     </fieldset>
+
+    <button type="button" onclick="comprobarRespuestas()">Comprobar respuestas</button>
+
+    <h3 id="resultado" role="status" aria-live="polite"></h3>
+     <p class="mensaje-actividad">¡Sigue intentando! Cada respuesta te ayuda a aprender.</p>
+</section>
+
+ <section id="contacto" class="bloque fondo-claro">
+     <h2>🚀 ¡Empieza a aprender!</h2>
+     <p>Explora la actividad y pon a prueba tus conocimientos.</p>
+    <a class="boton" href="#actividad">Ir a la actividad</a>
+</section>
+    </main>
+
+    <footer>
+ <p>Mundo Educa | Educación de calidad</p>
+<p>El conocimiento transforma el futuro.</p>
+   </footer>
+
+    <script src="educa.js"></script>
+</body>
+</html>
